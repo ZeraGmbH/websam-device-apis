@@ -1,8 +1,11 @@
+using System.Text.Json.Serialization;
+
 namespace SourceApi.Actions.Source
 {
     /// <summary>
     /// Possible results of source operations.
     /// /// </summary>
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum SourceResult
     {
         /// <summary>
